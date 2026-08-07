@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080d18;
+    color: white;
+}
+
+/* Cabeçalho */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d1526;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h1 {
+    color: #00aaff;
+    font-size: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Banner */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.8)
+    ),
+    url("assets/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: #00aaff;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* Botões */
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #0077cc;
+}
+
+/* Seções */
+
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111c30;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+/* Galeria */
+
+.prints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.prints img {
+    width: 280px;
+    border-radius: 15px;
+}
+
+/* FAQ */
+
+#faq h3 {
+    color: #00aaff;
+    margin-top: 20px;
+}
+
+#faq p {
+    margin-top: 10px;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d1526;
+}
+
+
+/* Celular */
+
+@media(max-width:700px){
+
+header {
+    flex-direction: column;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 8px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+}
